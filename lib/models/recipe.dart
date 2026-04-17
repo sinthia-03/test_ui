@@ -9,7 +9,7 @@ class Recipe {
     required this.ingredients,
   });
 
-  factory Recipe.fromJson(Map<String, dynamic> json) {
+  static Recipe fromJson(Map<String, dynamic> json) {
     return Recipe(
       title: json['title'],
       description: json['description'],
